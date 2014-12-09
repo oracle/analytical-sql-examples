@@ -1,6 +1,6 @@
 rem  ****************************************************************
-rem
-rem  Script for demonstrating the features of analytical SQL
+rem  Version 1.0 Dec 7, 2014
+rem  Setup script for demonstrating the features of analytical SQL
 rem
 rem  ****************************************************************
 rem

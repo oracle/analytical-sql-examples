@@ -1,3 +1,9 @@
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Script for demonstrating the features of analytical SQL
+rem
+rem  ****************************************************************
+rem
 
 rem  Let's start in simple way using the sales history schema. If we want to see a grid of total sales by quarters across
 rem  channels we can start by creating the input query that will deliver our resultset into our PIVOT clause

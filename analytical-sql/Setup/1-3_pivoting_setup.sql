@@ -1,3 +1,9 @@
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Setup script for demonstrating the features of analytical SQL
+rem
+rem  ****************************************************************
+
 rem  new pivoting source views to make demonstration of pivoting features
 rem  a lot easier
 rem

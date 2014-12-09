@@ -1,3 +1,10 @@
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Script for demonstrating the features of analytical SQL
+rem
+rem  ****************************************************************
+rem
+
 /* Part 3 - Statistical Features
 
 Included in Oracle 12c Database is a compelling array of statistical functions accessible from through SQL. 

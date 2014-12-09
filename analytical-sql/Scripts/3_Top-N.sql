@@ -1,3 +1,10 @@
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Script for demonstrating the features of analytical SQL
+rem
+rem  ****************************************************************
+rem
+
 rem  contains the code for running TOP-N queries as follows
 rem  against the tables/views in the SH schema. There are no
 rem  additional tables/views to create for this set of examples

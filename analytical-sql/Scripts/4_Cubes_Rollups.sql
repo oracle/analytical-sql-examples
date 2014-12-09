@@ -1,3 +1,10 @@
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Script for demonstrating the features of analytical SQL
+rem
+rem  ****************************************************************
+rem
+
 rem  scripts to demonstrate how to use the various rollup
 rem  features to calculate hierarchical totals within a 
 rem  cube.

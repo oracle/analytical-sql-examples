@@ -1,3 +1,10 @@
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Script for demonstrating the features of analytical SQL
+rem
+rem  ****************************************************************
+rem
+
 rem  scripts to demonstrate how to use MATCH_RECOGNIZE
 rem  clause for sql pattern matching
 rem
