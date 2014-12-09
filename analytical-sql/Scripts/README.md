@@ -58,6 +58,7 @@ and for long term events (World Cup, Olympics etc)
 
 	
 <h3>Analytical SQL Part 1</h3>
+Script: 1-1_analytical_funtions.sql
 
 This script introduces you to some of the basic concepts of analytical SQL. This section explores some of the the basic concepts behind analytic SQL
 
@@ -75,4 +76,45 @@ Creates groupings within result set
  - Argument can contain multiple columns in a comma separated list
  - Analytic function acts on each group independently
  - Works in the similar way to GROUP BY clause 
+
+<h4>Using ORDER BY clause...</h4>
+Optional clause, warning – if you omit an optional clause/keyword make sure results are what you were expecting.
+Majority of SQL statements will include ORDER BY keyword within the OVER() clause. If omitted then data is automatically aggregated within each PARTITION
+ 1. Defines the order of rows to be processed by the calculation
+ 2. Defines the default window	
+   - Sub-grouping of rows within the main block
+   - Default window is the current row + all previous rows
+
+<h4>Using windows...</h4>
+Gives you more control over the processing within the analytic function. Defines the start row and the end row for processing within each partition/group. Sophisticate set of keywords
+ - RANGE, INTERVAL DAY/MONTH/YEAR, UNBOUNDED, PRECEDING, FOLLOWING, CURRENT ROW
+
+Used to compute cumulative, moving, and centered aggregates. Two types of window:
+ - Physical
+ - Logical
+
+Similar in concept to the WHERE clause
+
+<h4>Sort optimizations...</h4>
+ - Number of sorts is minimized via the notion of “Ordering Groups”
+ - An ordering group is a set of analytic functions which can be evaluated with a single sort
+ - A minimal set of ordering groups is found which in turn minimizes the number of sorts
+
+<h3>Analytical SQL Part 2</h3>
+Scipt: 1-2_analytical_funtions_Part2.sql
+
+<h4>Ranking data...</h4>
+Ranking of data to find top 10 or bottom 10 is a common requirement. RANK() can be used in a similar way to other analytical aggregates such as SUM(), COUNT(), AVG() etc. We can create rankings across the whole data set or within each specific partition/group.
+
+<h4>Using LAG/LEAD...</h4>
+LAG/LEAD functions provides access to several rows at the same time. Allows comparison of different portions of a table without a self join. Functions operate on an ordered set of data. Allow access to a row at a fixed offset from the current row.
+
+<h4>Ratio to report</h4> 
+Ratio_to_report is another useful function. It computes the ratio of a value to the sum of a set of values. The PARTITION BY clause defines the groups on which the RATIO_TO_REPORT function is to be computed. If the PARTITION BY clause is absent, then the function is computed over the whole query result set. In this example the grouping is based on quarters so you get each months value as ration of the total for the specific quarter.
+
+
+<h3>Analytical SQL Part 3</h3>
+Script: 1-3_analytical_funtions_Part3.sql
+
+Included in Oracle 12c Database is a compelling array of statistical functions accessible from through SQL. These include descriptive statistics, hypothesis testing, correlations analysis, test for distribution fit, cross tabs with Chi-square statistics, and analysis of variance (ANOVA). 
 
