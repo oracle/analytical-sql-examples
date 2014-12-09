@@ -24,10 +24,10 @@ The in-database analytical functions features that are embedded inside the Oracl
 <li>Reporting Aggregates</li>
 <li>LAG/LEAD</li>
 <li>FIRST/LAST</li>
-</ul>
-</td><td>
-<ul>
 <li>Inverse Percentile</li>
+</ul>
+</td><td align="top">
+<ul>
 <li>Hypothetical Rank and Distribution</li>
 <li>Pattern Matching</li>
 <li>Modeling</li>
@@ -50,7 +50,11 @@ The in-database analytical functions features that are embedded inside the Oracl
 
 <h3>Assumptions</h3>
 
-- This tutorial assumes that you have run all the setup scripts before trying to execute any of the SQL scripts. The SQL commands incementally add new features and functions, however, it is not necessary to complete/run each script. Each script works in isolation so you do need to work through an entire topic before going to another one. 
+This tutorial assumes the following:
+
+1 - you have installed the sales history sample schema. There is more information about how to install the sample schemas in the Oracle 12xc Database documentation. Following this link <a href="https://docs.oracle.com/database/121/COMSC/installation.htm#COMSC00001" target="_blank">https://docs.oracle.com/database/121/COMSC/installation.htm#COMSC00001</a>. See the section headed <strong>"Installing the SH Schema"</strong>
+
+2 - you have run all the setup scripts before trying to execute any of the SQL scripts. The SQL commands incementally add new features and functions, however, it is not necessary to complete/run each script. Each script works in isolation so you do need to work through an entire topic before going to another one. 
 
 <h3>Tutorial Overview</h3>
 	
@@ -75,7 +79,7 @@ Set up the tutorial by running the following scripts. These scripts do not form 
 - 1-2_Setup_Cubes_Rollups.sql
 - 1-3_pivoting_setup.sql
 
-This assumes that you have installed the sales history sample schema which creates the user SH. 
+This assumes that you have installed the sales history sample schema which creates the user SH. More information about how to install the sales history schema is included in the section headed "Assumptions".
 
 <h3>Exercises</h3>
 
