@@ -1,7 +1,7 @@
 rem  ****************************************************************
 rem  Version 1.0 Dec 7, 2014
 rem  Script for demonstrating the features of analytical SQL
-rem
+rem  Author Keith Laker, Snr Principal Product Manager, Oracle
 rem  ****************************************************************
 rem
 
