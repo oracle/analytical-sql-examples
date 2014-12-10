@@ -1,3 +1,13 @@
+<!--
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Readme for analytical SQL scripts
+rem  Author Keith Laker, Snr Principal Product Manager, Oracle
+rem  ****************************************************************
+rem
+
+-->
+
 <h2>Analytical SQL Examples</h2>
 
 <h3>Purpose</h3>
