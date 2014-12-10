@@ -1,3 +1,11 @@
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Readme for SQL pattern matching scripts
+rem  Author Keith Laker, Snr Principal Product Manager, Oracle
+rem  ****************************************************************
+rem
+
+
 connect / as sysdba;
 -- creating user pmuser for pattern matching workshop…in database NONCDB'
 

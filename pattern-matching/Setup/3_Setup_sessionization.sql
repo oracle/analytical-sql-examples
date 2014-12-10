@@ -1,3 +1,13 @@
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Readme for SQL pattern matching scripts
+rem  Author Keith Laker, Snr Principal Product Manager, Oracle
+rem  ****************************************************************
+rem
+
+
+connect pmuser/pmuser
+
 CREATE TABLE clickdata (tstamp integer, userid varchar2(15));
 
 BEGIN

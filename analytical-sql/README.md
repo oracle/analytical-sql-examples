@@ -67,8 +67,6 @@ The tutorial is broken down into a number of different stages:
 - Pivoting and unpivoting data
 - Top-N queries
 - Aggregating data using cubes and rollups
-- SQL Pattern matching
-- Using the SQL MODEL clause
 
 <h3>Setup</h3>
 
