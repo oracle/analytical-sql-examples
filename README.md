@@ -1,15 +1,23 @@
+<!--
+rem  ****************************************************************
+rem  Version 1.0 Dec 7, 2014
+rem  Readme for analytical SQL Respository
+rem  Author Keith Laker, Snr Principal Product Manager, Oracle
+rem  ****************************************************************
+rem
+
+-->
 analytical-sql-examples
 =======================
 
 The aim of this reopistory is to provide some simple code samples for Oracle's analytical SQL features, such as the following: 
 
- - SQL aggregation extensions: cube, rollup, grouping sets
  - Window functions
- - SQL Model clause
  - Pivot/Unpivot
- - Pattern Matching
  - Top-N
- - WITH clause
+ - SQL aggregation extensions: cube, rollup, grouping sets
+ - Pattern Matching
+ - SQL Model clause
 
 To run these scripts you will need to install the Oracle Sales History schema which is included in the Oracle Database Examples download. There are full instructions on how to install the SH (Sales History) scheman in the "Database Sample Schemas" documentation. There are two ways to install the SH schema:
 
