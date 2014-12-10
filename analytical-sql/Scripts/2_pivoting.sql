@@ -71,7 +71,7 @@ PIVOT(sum(sales) FOR (qtr, channel)
 ORDER BY category;
 
 
-rem  now lets combine our window functions witnin the PIVOT operation
+rem  now lets combine our window functions within the PIVOT operation
 rem  by creating a report that shows each product category, its sales and
 rem  its contribution.
 
@@ -119,7 +119,7 @@ FOR quarter_id IN (SELECT distinct quarter_id from sh.prod_time_sales where quar
 
 
 rem  UNPIVOTING a data set is easy and takes us back to our original input data
-rem  from the emp table.
+rem  from the sales table.
 
 
 SELECT * 

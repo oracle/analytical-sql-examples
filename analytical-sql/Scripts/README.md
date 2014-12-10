@@ -118,3 +118,23 @@ Script: 1-3_analytical_funtions_Part3.sql
 
 Included in Oracle 12c Database is a compelling array of statistical functions accessible from through SQL. These include descriptive statistics, hypothesis testing, correlations analysis, test for distribution fit, cross tabs with Chi-square statistics, and analysis of variance (ANOVA). 
 
+<h3>Pivoting and Unpivoting Data</h3>
+Script: 2_pivoting.sql
+
+This set of commands use the PIVOT and UNPIVOT clauses. The build up the earlier window functions as part of the PIVOT operation by creating a report that shows each product category, its sales and its contribution. It is possible to generate XML output for each product catwegories sales for 1998 Q1, however, note that we are using the xmlserialize function to output the results of the column containing the XML.
+
+
+<h3>Filtering just the top-N results</h3>
+Script: 3_Top-N.sql
+
+Contains the code for running TOP-N queries against the tables/views in the SH schema. The first example shows the rows that make up the worst 20% of product sales during 1999.
+
+
+<h3>Aggregating hierarchical data</h3>
+Script: 4_Cubes_Rollups.sql
+
+Scripts to demonstrate how to use the various rollup features to calculate hierarchical totals within a "cube". This introduces the concepts of dimensions and hierarchies. Using GROUPING SETS it is possible to compute totals for specific groupings of levels within in each dimension. The last part of this script examines how to identify which rows have been calculated by the CUBE/ROLLUP/GROUPING SETS clauses. This functionality is especially useful for application developers who need to populate tables/forms within their application UIs.
+
+
+
+
