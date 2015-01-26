@@ -24,6 +24,7 @@ ORDER BY calendar_quarter_desc, prod_category_desc, channel_class;
 rem  we can now pass this to the PVIOT clause to transpose the rows containing the departmemt ids into
 rem  into columns the pre-PIVOT workaround is to use a CASE statement as follows:
 rem
+
 SELECT
  calendar_quarter_desc AS qtr,
  prod_category_desc AS category,
