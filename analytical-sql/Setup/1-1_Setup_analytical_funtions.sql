@@ -101,11 +101,11 @@ FROM times t;
 
 NEEDS REBUILDING FROM THE SALES FACT TABLE
 
-CREATE OR REPLACE VIEW DENSE_CHAN_PRODCAT_MONTHLY_SALES AS
+CREATE OR REPLACE VIEW DENSE_CHAN_PRODCAT_MTH_SALES AS
 SELECT
- PROD_SUBCATEGORY_DESC,
- CHANNEL_DESC,
- calendar_QUARTER_DESC,
+ PROD_SUBCATEGORY,
+ CHANNEL_ID,
+ CALENDAR_QUARTER_ID,
  CALENDAR_MONTH_DESC,
  AMOUNT_SOLD
 FROM
@@ -114,7 +114,7 @@ FROM
  s.channel_desc AS channel_id,
  s.calendar_quarter_desc AS quarter_id, 
  s.calendar_month_desc AS month_id,
- s.amount_sold AS sales
+ s.amount_sold AS amount_sold
 FROM CHAN_PRODCAT_MONTHLY_SALES s
 WHERE prod_subcategory_id not in (2051, 2031)) v
 PARTITION BY (v.prod_subcategory,v.channel_id)
@@ -157,9 +157,9 @@ Need this view to show the process for managing sparsity/nulls within moving ave
 
 CREATE OR REPLACE VIEW DENSE_PRODCAT_MONTHLY_SALES AS
 SELECT
- PROD_SUBCATEGORY_DESC,
- calendar_QUARTER_DESC,
- CALENDAR_MONTH_DESC,
+ PROD_SUBCATEGORY,
+ QUARTER_ID,
+ MONTH_ID,
  AMOUNT_SOLD
 FROM
 (SELECT
@@ -167,7 +167,7 @@ FROM
  s.channel_desc AS channel_id,
  s.calendar_quarter_desc AS quarter_id, 
  s.calendar_month_desc AS month_id,
- s.amount_sold AS sales
+ s.amount_sold AS amount_sold
 FROM CHAN_PRODCAT_MONTHLY_SALES s
 WHERE prod_subcategory_id not in (2051, 2031)) v
 PARTITION BY (v.prod_subcategory,v.channel_id)
