@@ -1,5 +1,5 @@
 Contributing to analytical-sql-examples
-Copyright (c) 2014,2016 Oracle and/or its affiliates The Universal Permissive License (UPL), Version 1.0
+Copyright (c) 2014, 2016 Oracle and/or its affiliates The Universal Permissive License (UPL), Version 1.0
 
 Pull requests are currently not being accepted for the Oracle analytical-sql-examples project.
 
