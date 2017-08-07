@@ -9,4 +9,4 @@ rem
 -->
 analytical-sql-examples
 =======================
-This reopistory is now decommissioned. All scripts are now available as tutorials on livesql.oracle.com.
+Note that the files within this repository are being updated and this repository has been decommissioned. All new scripts and new tutorials covering the latest SQL features for analytic SQL, pattern matching and statistics are now available on http://livesql.oracle.com.
